@@ -1,8 +1,8 @@
 import React from 'react'
-import { View, Text, StyleSheet } from 'react-native'
+import { View, Text } from 'react-native'
 
 const RowText = (props) => {
-    const { messageOne, messageTwo, containerStyles, messageOneStyles, messageTwoStyles } = styles
+    const { messageOne, messageTwo, containerStyles, messageOneStyles, messageTwoStyles } = props
     return (
         <View style={containerStyles}>
             <Text style={messageOneStyles}>{messageOne}</Text>
@@ -11,8 +11,5 @@ const RowText = (props) => {
     )
 }
 
-const styles = StyleSheet.create({
-
-})
 
 export default RowText
